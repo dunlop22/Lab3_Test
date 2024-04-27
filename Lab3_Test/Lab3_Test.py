@@ -15,3 +15,8 @@ class TestFileReader(unittest.TestCase):
         result = filereader.CheckFileExist("test.txt")
         os.remove("test.txt")
         self.assertEqual(result, True)
+
+    def testCheckFileDoesNotExist(self):
+        filereader = FileReader()
+        result = filereader.CheckFileExist("")
+        self.assertEqual(result, False)

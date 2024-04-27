@@ -1,5 +1,8 @@
-import os   #Работа с файлами
+import os   #Проверка существования файла с данными
+
 class FileReader():
     #todo проверить наличие файла, считать вопросы и ответы
     def CheckFileExist(self, namefile):        
-        return True
+        if os.path.isfile(namefile):
+            return True
+        return False
