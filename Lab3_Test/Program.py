@@ -8,4 +8,6 @@ class FileReader():
         return False
 
     def CheckInfoInFile(self, namefile):
+        if (os.stat(namefile).st_size==0):
+            return False
         return True
