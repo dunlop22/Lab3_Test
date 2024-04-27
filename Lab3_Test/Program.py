@@ -6,3 +6,6 @@ class FileReader():
         if os.path.isfile(namefile):
             return True
         return False
+
+    def CheckInfoInFile(self, namefile):
+        return True
