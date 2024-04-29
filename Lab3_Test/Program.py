@@ -1,4 +1,5 @@
 import os   #Проверка существования файла с данными
+import random   #Случайное перемешивание
 
 class FileReader():
     #todo проверить наличие файла, считать вопросы и ответы
@@ -11,3 +12,8 @@ class FileReader():
         if (os.stat(namefile).st_size==0):
             return False
         return True
+
+    
+
+class Game():
+    pass
