@@ -16,4 +16,10 @@ class FileReader():
     
 
 class Game():
-    pass
+    
+    def mixQuestion(self, question_orig):
+        #Создание копии
+        question_mix = question_orig.copy()
+        random.shuffle(question_mix)
+        return question_mix
+

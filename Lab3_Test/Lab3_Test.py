@@ -49,3 +49,9 @@ class TestFileReader(unittest.TestCase):
     def testGameClassCreation(self):
         game = Game()
         self.assertIsNotNone(game)
+
+    def testMixQuestion(self):
+        temp = [n for n in range(10)]
+        game = Game()
+        result = game.mixQuestion(temp)
+        self.assertNotEqual(temp, result)
